@@ -1,6 +1,6 @@
 @font-face {
     font-family: "BellotaText";
-    src: url('../fonts/BellotaText-BoldItalic.ttf') format("truetype");
+    src: url('../fonts/BellotaText-Bold.ttf') format("truetype");
     font-weight: 600;
     font-style: normal;
 }
@@ -24,7 +24,7 @@
     --orange: rgba(255, 191, 0, 1);
     --dark: rgba(0, 0, 0, 1);
     --blue: rgba(34, 116, 165, 1);
-    --text-dark-blue: rgba(255, 255, 255, 1);
+    --text-white: rgba(255, 255, 255, 1);
     font-size: 62.5%;
     min-width: 320px;
     max-width: 390px;
@@ -55,6 +55,42 @@ h1 {
     font-weight: 600;
     color: var(--dark);
     padding-bottom: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+h2{
+    font-size: 3.0rem;
+    font-weight: 600;
+    color: var(--text-white);
+    padding-bottom: 18px;
+    text-align: left;
+}
+
+p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-white);
+    padding-bottom: 18px;
+    text-align: left;
+    line-height: 20.13px;
+    letter-spacing: -2%;
+}
+
+a{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-white);
+    padding-bottom: 18px;
+    text-align: left;
+    line-height: 20.13px;
+    letter-spacing: -2%;
+}
+
+button{
+    background-color: var(--text-white);
+    border: none;
+    font-size: 2.0rem;
 }
 
 .header {
@@ -64,18 +100,86 @@ h1 {
     padding: 8px;
 }
 
+legend{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+label{
+    color: var(--dark);
+    font-size: 1.6rem;
+}
+
 .rk_section{
     margin: 32px 8px;
     display: flex;
     flex-direction:column ;
 }
 
-.rk_section div{
+.bloc {
     background-color:var(--blue);
     padding: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    margin: 18px 8px;
+}
 
+.bloc a{
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    padding: 16px 8px;
+}
+
+.slider_btn{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.footer_sec{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.footer_sec fieldset{
+    border: none;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.footer_sec p{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.footer_sec input {
+    font-size: 1.8rem;
+    padding: 8px;
+    background-color: var(--text-white);
+}
+
+@media screen and (max-width:390px) {
+    .header_herf{
+        display: none;
+    }
+    .bloc_2{
+        display: none;
+    }
+    
+    
+}
+
+@media screen and (min-width:720px) {
+.header_herf{
+    display: flex;
+}
 }
